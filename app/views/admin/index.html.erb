@@ -1,0 +1,8 @@
+<h1>Welcome , <%= User.find_by_id(session[:user_id]).name %></h1>
+
+It's <%= Time.now %>
+We have <%= pluralize(@total_orders, "order") %>
+
+<br/>
+
+<%= button_to 'Logout' ,logout_path,:method=>'delete' %>

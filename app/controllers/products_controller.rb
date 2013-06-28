@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  skip_before_filter :authorize,:only => [:create,:new]
   # GET /products
   # GET /products.xml
   def index

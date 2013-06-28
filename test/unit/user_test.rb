@@ -1,9 +1,6 @@
 require 'test_helper'
 
-class UserStoriesTest < ActionDispatch::IntegrationTest
-  #fixtures :all
-  fixtures :products
-
+class UserTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true
